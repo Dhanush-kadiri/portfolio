@@ -1,0 +1,32 @@
+import React from "react";
+import { FaGithub, FaInstagram, FaWhatsapp , FaYoutube} from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
+
+const Footer = () => {
+  const date = new Date();
+  let year = date.getFullYear();
+  return (
+    <footer>
+      <h4>Copyright &copy; {year} | All Rights Reserved.</h4>
+      <div className="footerLinks">
+        <a href="https://github.com/hisanthooosh" target="_blank">
+          <FaGithub />
+        </a>
+        <a href="https://instagram.com/dhanush_kadiri" target="_blank">
+          <FaInstagram />
+        </a>
+        <a href="https://wa.me/8639141082" target="_blank">
+          <FaWhatsapp />
+        </a>
+        <a href="https://www.youtube.com/@deepdivers_in" target="_blank">
+          <FaYoutube />
+        </a>
+        <a href="mailTo:kadiridhanush143@gmail.com" target="_blank">
+          <GrMail />
+        </a>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
