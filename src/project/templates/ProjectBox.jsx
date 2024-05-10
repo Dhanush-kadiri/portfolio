@@ -29,7 +29,7 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
         <a
           href={desc[projectName]?.githubLink}
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noreferrer"
         >
           <button className="projectbtn">
             <FaGithub /> Github
