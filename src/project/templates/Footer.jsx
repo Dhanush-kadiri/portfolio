@@ -9,19 +9,19 @@ const Footer = () => {
     <footer>
       <h4>Copyright &copy; {year} | All Rights Reserved.</h4>
       <div className="footerLinks">
-        <a href="https://github.com/hisanthooosh" target="_blank">
+        <a href="https://github.com/hisanthooosh" target="_blank" rel="noreferrer">
           <FaGithub />
         </a>
-        <a href="https://instagram.com/dhanush_kadiri" target="_blank">
+        <a href="https://instagram.com/dhanush_kadiri" target="_blank" rel="noreferrer">
           <FaInstagram />
         </a>
-        <a href="https://wa.me/8639141082" target="_blank">
+        <a href="https://wa.me/8639141082" target="_blank" rel="noreferrer">
           <FaWhatsapp />
         </a>
-        <a href="https://www.youtube.com/@deepdivers_in" target="_blank">
+        <a href="https://www.youtube.com/@deepdivers_in" target="_blank" rel="noreferrer">
           <FaYoutube />
         </a>
-        <a href="mailTo:kadiridhanush143@gmail.com" target="_blank">
+        <a href="mailTo:kadiridhanush143@gmail.com" target="_blank" rel="noreferrer">
           <GrMail />
         </a>
       </div>

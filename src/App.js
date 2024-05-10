@@ -10,6 +10,7 @@ import Projects from "./project/templates/Projects";
 import Contact from "./project/templates/Contact";
 import MoveToTop from "./project/templates/MoveToTop";
 import CircleLoader from "react-spinners/CircleLoader";
+
 import "./App.css";
 import Skills from "./project/templates/Skills";
 
