@@ -41,7 +41,7 @@ function App() {
           <TransitionGroup>
             <CSSTransition classNames="fade" timeout={500}>
               <Routes>
-                <Route path="/" element={<Navigate to="/portfolio" />} />
+                <Route path="/" element={<Navigate to="/portfolio" replace />} />
                 <Route path="/portfolio" element={<Home />} />
                 <Route path="/Type" element={<Type />} />
                 <Route path="/AboutMe" element={<About />} />
