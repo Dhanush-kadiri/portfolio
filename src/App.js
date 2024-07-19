@@ -38,20 +38,19 @@ function App() {
       ) : (
         <BrowserRouter>
           <Nav />
-          <Home/>
+          <Home /> {/* Always displayed below the Nav */}
           <TransitionGroup>
-            <CSSTransition classNames="fade" timeout={500}>
-            <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='/Type' element={<Type/>}  />
-      <Route path='/AboutMe'  element={<About/>}/>
-      <Route  path='/Skills' element={< Skills />}/>
-       <Route  path='/Contact' element={<Contact/>} />
-      <Route path='/Projects' element={<Projects/>} />
-      </Routes>
+            <CSSTransition key={window.location.pathname} classNames="fade" timeout={500}>
+              <Routes>
+                <Route path="/" element={<></>} /> {/* Empty element to keep Home displayed */}
+                <Route path="/Type" element={<Type />} />
+                <Route path="/AboutMe" element={<About />} />
+                <Route path="/Skills" element={<Skills />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/Projects" element={<Projects />} />
+              </Routes>
             </CSSTransition>
           </TransitionGroup>
-  
           <Footer />
           <MoveToTop />
         </BrowserRouter>
@@ -61,3 +60,4 @@ function App() {
 }
 
 export default App;
+
