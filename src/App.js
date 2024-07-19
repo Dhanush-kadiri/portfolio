@@ -42,7 +42,7 @@ function App() {
           <TransitionGroup>
             <CSSTransition classNames="fade" timeout={500}>
             <Routes>
-      <Route path='/Home' element={<Home/>} />
+      <Route path='/' element={<Home/>} />
       <Route path='/Type' element={<Type/>}  />
       <Route path='/AboutMe'  element={<About/>}/>
       <Route  path='/Skills' element={< Skills />}/>
@@ -51,7 +51,7 @@ function App() {
       </Routes>
             </CSSTransition>
           </TransitionGroup>
-         <Home/>
+  
           <Footer />
           <MoveToTop />
         </BrowserRouter>
