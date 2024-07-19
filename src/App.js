@@ -38,11 +38,11 @@ function App() {
       ) : (
         <BrowserRouter>
           <Nav />
-        <Home/>
+           <Home/>
           <TransitionGroup>
             <CSSTransition classNames="fade" timeout={500}>
             <Routes>
-      <Route path='/' element={<Home/>} />
+      // <Route path='/' element={<Home/>} />
       <Route path='/Type' element={<Type/>}  />
       <Route path='/AboutMe'  element={<About/>}/>
       <Route  path='/Skills' element={< Skills />}/>
