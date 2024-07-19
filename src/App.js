@@ -36,7 +36,7 @@ function App() {
           />
         </div>
       ) : (
-        <BrowserRouter>
+        <BrowserRouter  basename="/portfolio">
           <Nav />
           <TransitionGroup>
             <CSSTransition classNames="fade" timeout={500}>
