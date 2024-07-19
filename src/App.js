@@ -38,7 +38,7 @@ function App() {
       ) : (
         <BrowserRouter>
           <Nav />
-          
+          <Home/>
           <TransitionGroup>
             <CSSTransition classNames="fade" timeout={500}>
             <Routes>
