@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { useEffect, useState } from "react";
 import Nav from "./project/templates/Navbar";
@@ -36,18 +36,19 @@ function App() {
           />
         </div>
       ) : (
-        <BrowserRouter  basename="/portfolio">
+        <BrowserRouter basename="/portfolio">
           <Nav />
           <TransitionGroup>
             <CSSTransition classNames="fade" timeout={500}>
-            <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='/Type' element={<Type/>}  />
-      <Route path='/AboutMe'  element={<About/>}/>
-      <Route  path='/Skills' element={< Skills />}/>
-       <Route  path='/Contact' element={<Contact/>} />
-      <Route path='/Projects' element={<Projects/>} />
-      </Routes>
+              <Routes>
+                <Route path="/" element={<Navigate to="/portfolio" />} />
+                <Route path="/portfolio" element={<Home />} />
+                <Route path="/Type" element={<Type />} />
+                <Route path="/AboutMe" element={<About />} />
+                <Route path="/Skills" element={<Skills />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/Projects" element={<Projects />} />
+              </Routes>
             </CSSTransition>
           </TransitionGroup>
           <Footer />
@@ -59,3 +60,4 @@ function App() {
 }
 
 export default App;
+
