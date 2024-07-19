@@ -45,7 +45,7 @@ function App() {
               key={window.location.pathname}
             >
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/portfolio" element={<Home />} />
                 <Route path="/Type" element={<Type />} />
                 <Route path="/AboutMe" element={<About />} />
                 <Route path="/Skills" element={<Skills />} />
