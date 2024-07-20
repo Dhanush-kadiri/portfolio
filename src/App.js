@@ -103,6 +103,7 @@ function App() {
       ) : (
         <BrowserRouter>
           <Nav />
+          <Home/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Type" element={<Type />} />
