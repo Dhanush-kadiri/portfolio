@@ -39,16 +39,16 @@ const Contact = () => {
       <h2>Get In Touch</h2>
       <div className="contact-options"  >
         <Tilt>
-        <button className="contact-option" onClick={handleWhatsAppClick} style={{height:100,width:250, marginLeft:100}}>
-          <FaWhatsapp className="icon" style={{height:50,width:50}} />
+        <button className="contact-option" onClick={handleWhatsAppClick} style={{height:'20%',width:'70%', marginLeft:'10%' , borderRadius:50}}>
+          <FaWhatsapp className="icon" style={{height:'25%',width:'25%'}} />
           Contact via WhatsApp
         </button>
         ></Tilt>
-        <div className="or" style={{fontSize:25, alignItems:'center', marginTop:25,marginLeft:200}}> <b>OR</b></div>
+        <div className="or" style={{fontSize:'auto', alignItems:'center', marginTop:'10%',marginLeft:'35%'}}> <b>OR</b></div>
          
         <Tilt>
-        <button className="contact-option" onClick={handleEmailClick} style={{height:100,width:250, marginLeft:100}}>
-          <FaEnvelope className="icon" style={{height:50,width:50}} />
+        <button className="contact-option" onClick={handleEmailClick} style={{height:'20%',width:'70%', marginLeft:'10%' , borderRadius:50}}>
+          <FaEnvelope className="icon" style={{height:'25%',width:'25%'}} />
           Contact via Email
         </button>
        
