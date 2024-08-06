@@ -1,4 +1,4 @@
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { useEffect, useState } from "react";
 import Nav from "./project/templates/Navbar";
@@ -10,7 +10,6 @@ import Projects from "./project/templates/Projects";
 import Contact from "./project/templates/Contact";
 import MoveToTop from "./project/templates/MoveToTop";
 import CircleLoader from "react-spinners/CircleLoader";
-
 import "./App.css";
 import Skills from "./project/templates/Skills";
 
@@ -25,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <Router basename="/portfolio">
       {loading ? (
         <div className="loader">
           <CircleLoader
@@ -37,26 +36,26 @@ function App() {
           />
         </div>
       ) : (
-        <BrowserRouter>
+        <div>
           <Nav />
-          <Home />
+         
           <TransitionGroup>
             <CSSTransition classNames="fade" timeout={500}>
-            <Routes>
-      <Route path='/' element={<Home/>} />
-      <Route path='/Type' element={<Type/>}  />
-      <Route path='/AboutMe'  element={<About/>}/>
-      <Route  path='/Skills' element={< Skills />}/>
-       <Route  path='/Contact' element={<Contact/>} />
-      <Route path='/Projects' element={<Projects/>} />
-      </Routes>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/Type" element={<Type />} />
+                <Route path="/AboutMe" element={<About />} />
+                <Route path="/Skills" element={<Skills />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/Projects" element={<Projects />} />
+              </Routes>
             </CSSTransition>
           </TransitionGroup>
           <Footer />
           <MoveToTop />
-        </BrowserRouter>
+        </div>
       )}
-    </div>
+    </Router>
   );
 }
 
