@@ -25,18 +25,10 @@ const Contact = () => {
         </button></Tilt>
         <div className="or" style={{fontSize:'auto', alignItems:'center', marginTop:'10%',marginLeft:'35%'}}> <b>OR</b></div>
         <Tilt>
-        <button className="contact-option" onClick={handleEmailClick}  style={{height:'20%',width:'70%', marginLeft:'15%' , borderRadius:50}}/>
-          <FaEnvelope className="icon"  style={{height:'25%',width:'25%'}} />
+      
 
-        <button className="contact-option" onClick={handleWhatsAppClick} style={{height:'20%',width:'70%', borderRadius:50}}>
-          <FaWhatsapp className="icon" style={{height:'25%',width:'25%'}} />
-          Contact via WhatsApp
-        </button>
-        </Tilt>
-        <div className="or" style={{fontSize:'auto', alignItems:'center', marginTop:'10%',marginLeft:'35%'}}> <b>OR</b></div>
-         
-        <Tilt>
-        <button className="contact-option" onClick={handleEmailClick} style={{height:'20%',width:'70%', borderRadius:50}}>
+      
+        <button className="contact-option" onClick={handleEmailClick} style={{height:'20%',width:'70%',marginLeft:'35%', borderRadius:50}}>
           <FaEnvelope className="icon" style={{height:'25%',width:'25%'}} />
 
           Contact via Email
