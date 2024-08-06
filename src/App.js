@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <Router basename="/portfolio">
+    <Router >
       {loading ? (
         <div className="loader">
           <CircleLoader
