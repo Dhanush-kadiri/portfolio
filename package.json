@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
- "homepage": "https://dhanush-kadiri.github.io",
+  "homepage": "https://dhanush-kadiri.github.io",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
@@ -74,7 +74,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+      "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -103,4 +103,3 @@
     ]
   }
 }
-
