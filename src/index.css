@@ -46,8 +46,7 @@ code {
     align-items: center;
   }
   button {
-    font-size: 20px;
-    display: inline-flex;
+    font-size: 15px;
     align-items: center;
     justify-content: space-evenly;
     width: 40%;
@@ -60,6 +59,7 @@ code {
     cursor: pointer;
     text-decoration: none;
     border-style: none;
+    margin-bottom: 5%;
   }
   
   button:hover {
