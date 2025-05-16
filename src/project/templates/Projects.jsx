@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectBox from "./ProjectBox";
-import logo from '../images/mylogo.svg.png'
 
 const Projects = () => {
   return (
@@ -9,8 +8,17 @@ const Projects = () => {
         My <b>Projects</b>
       </h1>
       <div className="project">
-        <ProjectBox projectPhoto={logo} projectName="karona webapplication" />
-        <ProjectBox projectPhoto={logo} projectName="karona mobile application" />
+        <ProjectBox projectName="MEMU" />
+        <ProjectBox projectName="KD CHATS" />
+        <ProjectBox projectName="Geo Spatial Planner" />
+        <ProjectBox projectName="ALPACK" />
+        <ProjectBox projectName="VAAYUJA" />
+        <ProjectBox projectName="FLO" />
+        <ProjectBox projectName="RIACT" />
+        <ProjectBox projectName="Y-WIRE" />
+        <ProjectBox projectName="COMPANIO" />
+        <ProjectBox projectName="Instakart" />
+        <ProjectBox projectName="AI skill enhancer" />
       </div>
     </div>
   );
